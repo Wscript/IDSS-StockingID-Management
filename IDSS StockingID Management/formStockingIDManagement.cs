@@ -25,7 +25,7 @@ namespace IDSS_StockingID_Management
             DataTable dtBU = new DataTable();
             DataTable dtProductType = new DataTable();
 
-            string consqlserver = ConfigurationManager.ConnectionStrings["LocalDBConnectionString"].ToString() + ";Password=CSD;";
+            string consqlserver = ConfigurationManager.ConnectionStrings["IDSSConnectionString"].ToString () + ";Password=CSD;";
             SqlConnection con = new SqlConnection(consqlserver);
             
             string sqlBU = "SELECT NAME FROM T_BI_BU";
@@ -81,7 +81,7 @@ namespace IDSS_StockingID_Management
 
             string strCondition = "";
 
-            string consqlserver = ConfigurationManager.ConnectionStrings["LocalDBConnectionString"].ToString() + ";Password=CSD;";
+            string consqlserver = ConfigurationManager.ConnectionStrings["IDSSConnectionString"].ToString () + ";Password=CSD;";
             SqlConnection con = new SqlConnection(consqlserver);
 
             try

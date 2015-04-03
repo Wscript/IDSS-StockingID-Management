@@ -32,7 +32,7 @@ namespace IDSS_StockingID_Management
                 DataTable dt = new DataTable();
 
                 //定义数据库连接语句
-                string consqlserver = ConfigurationManager.ConnectionStrings["LocalDBConnectionString"].ToString () + ";Password=CSD;";
+                string consqlserver = ConfigurationManager.ConnectionStrings["IDSSConnectionString"].ToString () + ";Password=CSD;";
 
                 //定义SQL查询语句  
                 string sql = "SELECT * FROM SYSUSER WHERE SYSUSERID='" + textBoxUsername.Text + "'";
